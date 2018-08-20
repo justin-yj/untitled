@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lw.dao.account.ShopMapper">
+
+
+  <select id="findList" resultType="com.lw.data.dto.shop.ShopDTO">
+    SELECT company_co,company_nm,stco,name,open_date,close_date,area_co,area_nm,location,sv_code,sv_name,shop_type,address,tel,shop_type_co,business,start_time,end_time FROM lw_shop
+  </select>
+
+
+</mapper>
