@@ -4,13 +4,14 @@ spring:
   application:
     name: web
   redis:
-    host: 127.0.0.1
-    pool:
-      max-idle: 8
-      min-idle: 0
-#    port: 6380
-    port: 6379
-    password:
+      host: 172.168.11.101
+      password: tykj_ncpzs
+      port: 6379
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1
   mvc:
     view:
       prefix: /page/
@@ -27,7 +28,7 @@ logging:
 #datasource config
 jdbc:
   driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://127.0.0.1:3306/LW?zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=utf-8
+  url: jdbc:mysql://139.199.101.89:3306/LW?zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=utf-8
   username: wangqiyue
   password: wangqiyue
   maxWait: 5000

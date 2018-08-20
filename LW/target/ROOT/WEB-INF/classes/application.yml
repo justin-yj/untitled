@@ -4,13 +4,14 @@ spring:
   application:
     name: web
   redis:
-    host: 127.0.0.1
-    pool:
-      max-idle: 8
-      min-idle: 0
-#    port: 6380
-    port: 6379
-    password:
+      host: 172.168.11.101
+      password: tykj_ncpzs
+      port: 6379
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1
   mvc:
     view:
       prefix: /page/
