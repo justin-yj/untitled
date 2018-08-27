@@ -118,7 +118,7 @@
     </dependencies>
 
     <build>
-        <finalName>ROOT</finalName>
+        <finalName>LW</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
