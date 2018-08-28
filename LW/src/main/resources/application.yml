@@ -4,7 +4,7 @@ spring:
   application:
     name: web
   redis:
-      host: 172.168.11.101
+      host: 172.168.11.108
       password: tykj_ncpzs
       port: 6379
       pool:
